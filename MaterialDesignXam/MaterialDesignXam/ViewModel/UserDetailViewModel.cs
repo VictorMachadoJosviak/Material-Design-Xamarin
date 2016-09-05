@@ -25,6 +25,9 @@ namespace MaterialDesignXam.ViewModel
             SelectedUser = user;
         }
 
+
+
+
         private User _selectedUser;
         public User SelectedUser
         {
