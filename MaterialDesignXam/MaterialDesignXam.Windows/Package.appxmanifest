@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+
+  <Identity Name="336c1a45-b141-47a9-a33c-c70c9d6e7b80"
+            Publisher="CN=Victor"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>MaterialDesignXam.Windows</DisplayName>
+    <PublisherDisplayName>Victor</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="MaterialDesignXam.Windows.App">
+      <m2:VisualElements
+          DisplayName="MaterialDesignXam.Windows"
+          Square150x150Logo="Assets\Logo.png"
+          Square30x30Logo="Assets\SmallLogo.png"
+          Description="MaterialDesignXam.Windows"
+          ForegroundText="light"
+          BackgroundColor="#464646">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
